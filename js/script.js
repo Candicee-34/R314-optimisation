@@ -1,13 +1,1 @@
-(function(){
-  const start = performance.now();
-  while (performance.now() - start < 2000) {}
-  const waste = [];
-  for (let i=0;i<200000;i++) { waste.push(Math.random()*i); }
-  window.__waste = waste;
-  window.addEventListener('load', function(){
-    const imgs = document.querySelectorAll('.card img');
-    imgs.forEach(img => { if (img.complete) img.classList.add('loaded'); else img.addEventListener('load', ()=> img.classList.add('loaded')); });
-    const t0 = performance.now();
-    while (performance.now() - t0 < 1000) {}
-  });
-})();
+!function(){let e=performance.now();for(;performance.now()-e<2e3;);let o=[];for(let d=0;d<2e5;d++)o.push(Math.random()*d);window.__waste=o,window.addEventListener("load",function(){let e=document.querySelectorAll(".card img");e.forEach(e=>{e.complete?e.classList.add("loaded"):e.addEventListener("load",()=>e.classList.add("loaded"))});let o=performance.now();for(;performance.now()-o<1e3;);})}();
