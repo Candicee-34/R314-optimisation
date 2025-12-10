@@ -17,4 +17,4 @@
     <div style="margin-top:8px;font-size:12px;opacity:.8">
       <div id="m-note">Cliquez sur <em>Mesurer</em> apr\xe8s vos modifications.</div>
     </div>
-  `,document.addEventListener("DOMContentLoaded",()=>{document.body.appendChild(c)}),document.addEventListener("click",t=>{t.target&&"perf-refresh"===t.target.id&&v(),t.target&&"perf-close"===t.target.id&&c.remove()}),addEventListener("load",()=>{setTimeout(v,0)})}();
+  `,document.addEventListener("DOMContentLoaded",()=>{document.body.appendChild(c)}),document.addEventListener("click",t=>{t.target&&"perf-refresh"===t.target.id&&v(),t.target&&"perf-close"===t.target.id&&c.remove()}),addEventListener("load",()=>{})}();
